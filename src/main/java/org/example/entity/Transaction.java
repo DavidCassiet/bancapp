@@ -9,10 +9,10 @@ public class Transaction {
     private Date date;
     private TransactionType type;
     private double amount;
-    private String branchId;
+    private int branchId;
     private String accountCBU;
 
-    public Transaction(String id, TransactionType type, double amount, String branchId, String accountCBU) {
+    public Transaction(String id, TransactionType type, double amount, int branchId, String accountCBU) {
         this.id = id;
         this.date = new Date();
         this.type = type;
@@ -53,11 +53,11 @@ public class Transaction {
         this.amount = amount;
     }
 
-    public String getBranchId() {
+    public int getBranchId() {
         return branchId;
     }
 
-    public void setBranchId(String branchId) {
+    public void setBranchId(int branchId) {
         this.branchId = branchId;
     }
 

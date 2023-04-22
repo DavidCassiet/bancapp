@@ -76,4 +76,12 @@ public class Account {
     public void setTransactions(ArrayList<Transaction> transactions) {
         this.transactions = transactions;
     }
+
+    public void addTransaction(Transaction objTransaction) {
+        this.transactions.add(objTransaction);
+    }
+
+    public void removeTransaction(Transaction objTransaction) {
+        this.transactions.remove(objTransaction);
+    }
 }

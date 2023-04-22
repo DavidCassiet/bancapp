@@ -46,4 +46,12 @@ public class Branch {
     public void setClients(ArrayList<Client> clients) {
         this.clients = clients;
     }
+
+    public void addClient(Client objClient) {
+        this.clients.add(objClient);
+    }
+
+    public void removeClient(Client objClient) {
+        this.clients.remove(objClient);
+    }
 }

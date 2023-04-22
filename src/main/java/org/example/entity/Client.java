@@ -55,4 +55,12 @@ public class Client {
     public void setAccounts(ArrayList<Account> accounts) {
         this.accounts = accounts;
     }
+
+    public void addAccount(Account objAccount) {
+        this.accounts.add(objAccount);
+    }
+
+    public void removeAccount(Account objAccount) {
+        this.accounts.remove(objAccount);
+    }
 }
