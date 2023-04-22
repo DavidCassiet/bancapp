@@ -3,24 +3,24 @@ package org.example.entity;
 import java.util.ArrayList;
 
 public class Branch {
-    private static int id = 0;
+    private int id;
     private String name;
     private String address;
     private ArrayList<Client> clients;
 
-    public Branch(String name, String address) {
-        id++;
+    public Branch(int id, String name, String address) {
+        this.id = id;
         this.name = name;
         this.address = address;
         this.clients = new ArrayList<>();
     }
 
-    public static int getId() {
+    public int getId() {
         return id;
     }
 
-    public static void setId(int id) {
-        Branch.id = id;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getName() {
